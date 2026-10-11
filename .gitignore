@@ -1,0 +1,15 @@
+# Jupyter and Python-generated files
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Local environments and tooling
+.venv/
+venv/
+env/
+.env
+
+# Temporary execution and system files
+*.execution.log
+.DS_Store
+Thumbs.db
