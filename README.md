@@ -3,8 +3,8 @@
 ## MSc Data Science — First Year
 
 **Department:** Data Science  
-**Student Name:** N SYLVESTER JONES  
-**Department Number:** 26 PDS 017
+**Student Name:** R Selva Rejo  
+**Department Number:** 26 PDS 009
 
 # Machine Learning Practical Record
 
