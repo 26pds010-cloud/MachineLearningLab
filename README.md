@@ -1,118 +1,171 @@
-[# Loyola College
+# Machine Learning Laboratory — Practical 
 
-## MSc Data Science — First Year
+## MSc Data Science | First Year
 
-**Department:** Data Science  
-**Student Name:** R Selva Rejo  
-**Department Number:** 26 PDS 009
+**Institution:** Loyola College
+**Department:** Data Science
+**Student Name:** HAIZEL JANANI J J
+**Department Number:** 26 PDS 010
 
-# Machine Learning Practical Record
+---
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
-![Exercises](https://img.shields.io/badge/Exercises-14-2ea44f)
-![Status](https://img.shields.io/badge/Status-Executed%20and%20validated-2ea44f)
+## About This Repository
 
-A GitHub-ready collection of the **14 machine learning practical exercises** documented in the accompanying Word/PDF record. Each notebook follows the original exercise order and includes saved outputs, tables, metrics, and visualizations for direct viewing on GitHub.
+This repository contains my Machine Learning laboratory exercises completed as part of the first-year MSc Data Science programme. It brings together practical implementations of data exploration, regression, classification, clustering, and dimensionality reduction using Python.
 
-## Project overview
+The notebooks are arranged in a systematic order, with code, results, evaluation metrics, and visualizations wherever applicable.
 
-```text
-Practical record
-      |
-      +--> Data analysis ........ Titanic
-      +--> Regression .......... Salary, Housing, Fish
-      +--> Classification ...... Heart disease
-      +--> Clustering .......... Heart disease
-      +--> Dimensionality ...... Heart disease
-```
+### Technologies Used
 
-The notebooks are grouped into a single ordered sequence:
+* **Python** — Programming and model implementation
+* **Pandas & NumPy** — Data manipulation and numerical operations
+* **Matplotlib & Seaborn** — Data visualization
+* **Scikit-learn** — Machine learning algorithms and evaluation
+* **Jupyter Notebook** — Practical implementation and documentation
 
-```text
-01 EDA
-02-05 Regression
-06-10 Classification
-11-13 Clustering
-14 PCA
-```
+## Practical Index
 
-## Exercise sequence
+| Exercise | Practical Title                    | Dataset        |
+| -------: | ---------------------------------- | -------------- |
+|       01 | Exploratory Data Analysis (EDA)    | Titanic        |
+|       02 | Simple Linear Regression           | Salary Dataset |
+|       03 | Multiple Linear Regression         | Housing        |
+|       04 | Polynomial Regression              | Fish           |
+|       05 | Ridge and Lasso Regularization     | Housing        |
+|       06 | Logistic Regression                | Heart Disease  |
+|       07 | K-Nearest Neighbors (KNN)          | Heart Disease  |
+|       08 | Decision Tree Classifier           | Heart Disease  |
+|       09 | Random Forest Classifier           | Heart Disease  |
+|       10 | Support Vector Machine (SVM)       | Heart Disease  |
+|       11 | K-Means Clustering                 | Heart Disease  |
+|       12 | Hierarchical Clustering            | Heart Disease  |
+|       13 | DBSCAN Clustering                  | Heart Disease  |
+|       14 | Principal Component Analysis (PCA) | Heart Disease  |
 
-| No. | Notebook | Practical | Dataset |
-|---:|---|---|---|
-| 1 | [`01_eda_titanic.ipynb`](notebooks/01_eda_titanic.ipynb) | Exploratory Data Analysis | `titanic.csv` |
-| 2 | [`02_simple_linear_regression.ipynb`](notebooks/02_simple_linear_regression.ipynb) | Simple Linear Regression | `Salary_dataset.csv` |
-| 3 | [`03_multiple_linear_regression.ipynb`](notebooks/03_multiple_linear_regression.ipynb) | Multiple Linear Regression | `Housing.csv` |
-| 4 | [`04_polynomial_regression_fish.ipynb`](notebooks/04_polynomial_regression_fish.ipynb) | Polynomial Regression | `Fish.csv` |
-| 5 | [`05_regularization_ridge_lasso.ipynb`](notebooks/05_regularization_ridge_lasso.ipynb) | Regularization Techniques | `Housing.csv` |
-| 6 | [`06_logistic_regression.ipynb`](notebooks/06_logistic_regression.ipynb) | Logistic Regression | `heart_disease_dataset.csv` |
-| 7 | [`07_knn_classifier.ipynb`](notebooks/07_knn_classifier.ipynb) | K-Nearest Neighbour | `heart_disease_dataset.csv` |
-| 8 | [`08_decision_tree_classifier.ipynb`](notebooks/08_decision_tree_classifier.ipynb) | Decision Tree Classification | `heart_disease_dataset.csv` |
-| 9 | [`09_random_forest_classifier.ipynb`](notebooks/09_random_forest_classifier.ipynb) | Random Forest Classification | `heart_disease_dataset.csv` |
-| 10 | [`10_support_vector_machine.ipynb`](notebooks/10_support_vector_machine.ipynb) | Support Vector Machine | `heart_disease_dataset.csv` |
-| 11 | [`11_kmeans_clustering.ipynb`](notebooks/11_kmeans_clustering.ipynb) | K-Means Clustering | `heart_disease_dataset.csv` |
-| 12 | [`12_hierarchical_clustering.ipynb`](notebooks/12_hierarchical_clustering.ipynb) | Hierarchical Clustering | `heart_disease_dataset.csv` |
-| 13 | [`13_dbscan_clustering.ipynb`](notebooks/13_dbscan_clustering.ipynb) | DBSCAN Clustering | `heart_disease_dataset.csv` |
-| 14 | [`14_principal_component_analysis.ipynb`](notebooks/14_principal_component_analysis.ipynb) | Principal Component Analysis | `heart_disease_dataset.csv` |
+## Learning Areas
 
-## Dataset map
+### 1. Data Exploration
 
-```mermaid
-flowchart LR
-    T[titanic.csv] --> E[01 EDA]
-    S[Salary_dataset.csv] --> SL[02 Simple Linear Regression]
-    H[Housing.csv] --> ML[03 Multiple Linear Regression]
-    H --> R[05 Ridge and Lasso]
-    F[Fish.csv] --> P[04 Polynomial Regression]
-    HD[heart_disease_dataset.csv] --> C[06-10 Classification]
-    HD --> CL[11-13 Clustering]
-    HD --> PCA[14 PCA]
-```
+Examining dataset structure, identifying missing values, understanding distributions, and discovering useful patterns through visual analysis.
 
-## Repository structure
+### 2. Regression Models
+
+Building regression models to understand relationships between variables and estimate continuous outcomes. This section includes linear regression, polynomial regression, and regularization methods.
+
+### 3. Classification Algorithms
+
+Implementing supervised learning techniques to predict categorical outcomes and evaluate model performance using suitable metrics.
+
+### 4. Clustering Methods
+
+Applying unsupervised learning algorithms to identify groups and patterns in data without predefined target labels.
+
+### 5. Dimensionality Reduction
+
+Using Principal Component Analysis to transform features into a smaller set of components while retaining as much relevant variation as possible.
+
+## Project Organization
 
 ```text
-my_expectations/
-├── dataset/                 # Five datasets used by the record
-├── notebooks/               # Exercises 01-14 in record order
-├── optional/                # Additional GridSearchCV exercise
+MachineLearningLab/
+│
+├── dataset/
+│   ├── titanic.csv
+│   ├── Salary_dataset.csv
+│   ├── Housing.csv
+│   ├── Fish.csv
+│   └── heart_disease_dataset.csv
+│
+├── notebooks/
+│   ├── 01_eda_titanic.ipynb
+│   ├── 02_simple_linear_regression.ipynb
+│   ├── 03_multiple_linear_regression.ipynb
+│   ├── 04_polynomial_regression_fish.ipynb
+│   ├── 05_regularization_ridge_lasso.ipynb
+│   ├── 06_logistic_regression.ipynb
+│   ├── 07_knn_classifier.ipynb
+│   ├── 08_decision_tree_classifier.ipynb
+│   ├── 09_random_forest_classifier.ipynb
+│   ├── 10_support_vector_machine.ipynb
+│   ├── 11_kmeans_clustering.ipynb
+│   ├── 12_hierarchical_clustering.ipynb
+│   ├── 13_dbscan_clustering.ipynb
+│   └── 14_principal_component_analysis.ipynb
+│
+├── optional/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 ```
 
-The optional GridSearchCV notebook is intentionally separate because it is not part of the original 14-exercise sequence.
+*Note: The structure above describes the intended organization. The actual folders and filenames should match the files present in the repository.*
 
-## Run the notebooks locally
+## Setting Up the Environment
 
-From the `my_expectations` directory:
+Make sure Python is installed on your system. Clone the repository and move into the project folder.
+
+```bash
+git clone https://github.com/26pds010-cloud/MachineLearningLab.git
+cd MachineLearningLab
+```
+
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
+```
 
-# Windows
+**Windows:**
+
+```bash
 .venv\Scripts\activate
+```
 
-# macOS/Linux
-# source .venv/bin/activate
+**macOS/Linux:**
 
+```bash
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
+```
+
+Start Jupyter Notebook:
+
+```bash
 jupyter notebook
 ```
 
-Open the notebooks from `notebooks/`. Their dataset paths are relative and resolve to the project `dataset/` directory.
+Navigate to the `notebooks` folder and open the practical you want to run.
 
-To execute a notebook and refresh its saved outputs:
+## Running the Experiments
 
-```bash
-jupyter nbconvert --to notebook --execute --inplace \
-  --ExecutePreprocessor.timeout=300 \
-  notebooks/01_eda_titanic.ipynb
-```
+For the notebooks to run correctly:
 
-## Validation status
+1. Keep the datasets in the designated dataset folder.
+2. Install all the dependencies listed in `requirements.txt`.
+3. Execute the notebook cells in sequence.
+4. Review the printed outputs, evaluation results, and graphs.
+5. Save the notebook after execution if you want to retain the latest outputs.
 
-The notebooks in this repository were executed against the included datasets. Their outputs are saved in the `.ipynb` files so GitHub can display the results without running the notebooks.
-](https://github.com/selva-r07/MachineLearningLab)
+## Repository Objectives
+
+* Gain practical experience with fundamental machine learning algorithms.
+* Understand the differences between supervised and unsupervised learning.
+* Practice data preparation, feature processing, and model evaluation.
+* Interpret model outputs and visualize experimental results.
+* Maintain an organized record of laboratory work for academic reference.
+
+## Conclusion
+
+This repository serves as a practical learning record covering key machine learning concepts studied during the MSc Data Science programme. Each exercise provides an opportunity to implement algorithms, examine results, and strengthen the connection between theoretical concepts and practical applications.
+
+---
+
+**Course:** MSc Data Science
+**Academic Level:** First Year
+**Subject:** Machine Learning Laboratory
